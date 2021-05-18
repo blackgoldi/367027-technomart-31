@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Булат Яруллин](https://up.htmlacademy.ru/htmlcss/31/user/367027).
-* Наставник: `Неизвестно`.
+* Наставник: [Егор Дьяченко](https://htmlacademy.ru/profile/semperhomolupus).
 
 ---
 
