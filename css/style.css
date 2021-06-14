@@ -27,6 +27,10 @@ body{
   background-color: var(--basic-background);
 }
 
+main{
+  background-color: var(--basic-background);
+}
+
 a{
   text-decoration: none;
 }
@@ -53,7 +57,7 @@ footer{
   vertical-align: middle;
 }
 
-.header-list .order-button{
+.header-list .header-item-order{
   padding-top: 9px;
   padding-bottom: 9px;
   padding-left: 19px;
@@ -61,7 +65,7 @@ footer{
   background-color: var(--basic-green);
 }
 
-.header-list .cart-button{
+.header-list .header-item-cart{
   padding-top: 9px;
   padding-bottom: 9px;
   padding-left: 19px;
@@ -244,10 +248,6 @@ footer{
   background: var(--white);
 }
 
-.exit-button{
-
-}
-
 .banner h1,h2{
   font-weight: 400;
   font-size: 30px;
@@ -259,7 +259,7 @@ footer{
   text-transform: uppercase;
 }
 
-.filter{
+.filter-vertical{
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
@@ -350,16 +350,13 @@ legend{
   display: inline;
 }
 
-.container{
-  background-color: var(--basic-background);
-}
 
 .container li{
   display: inline;
   padding-right: 17px;
 }
 
-.bread-crumbs{
+.breadcrumb{
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
@@ -368,6 +365,10 @@ legend{
   align-items: center;
   text-transform: uppercase;
   color: #000000;
+}
+
+.breadcrumb-list li{
+  display: inline;
 }
 
 .cabinet li{
