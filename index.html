@@ -11,18 +11,17 @@
   </head>
 
   <body class="body-page">
-
     <header class="main-header">  <!-- ХЕДЕР начало-->
 
       <section class="body-header"> <!-- верхушка сайта-->
         <div class="header-left">
           <div class="header-item header-item-logo"><a href="index.html"><img src="img/main/logo.svg" width="108" height="18" alt="Логотип Техномарт"></a></div>
-          <div class="header-item header-item-find"><img class="header-item-icon icon-search" src="img/main/icon-find.svg" height="17" width="17" alt="Лупа для поиска"><label class="input-find-label" for="site-search">Поиск:</label><input type="search" class="input-find" name="site-search" id="site-search"></div>
+          <div class="header-item-btn header-item-find"><img class="header-item-icon icon-search" src="img/main/icon-find.svg" height="17" width="17" alt="Лупа для поиска"><input type="search" class="input-find" name="site-search" id="site-search" value="Поиск:"></div>
         </div>
         <div class="header-right">
-          <div class="header-item header-item-favorite"><a href="blank.html"><img class="header-item-icon icon-favorite" src="img/main/icon-favorite.svg" width="14" height="15,58">Закладки: 0</a></div>
-          <div class="header-item header-item-cart-empty"><a href="blank.html"><img class="header-item-icon icon-cart" src="img/main/icon-cart.svg" width="15" height="15">Корзина: 0</a></div>
-          <div class="header-item header-item-order"><a href="blank.html">Оформить заказ</a></div>
+          <div class="header-item-btn header-item-favorite"><a href="blank.html"><img class="header-item-icon icon-favorite" src="img/main/icon-favorite.svg" width="14" height="15,58">Закладки: 0</a></div>
+          <div class="header-item-btn header-item-cart-empty"><a href="blank.html"><img class="header-item-icon icon-cart" src="img/main/icon-cart.svg" width="15" height="15">Корзина: 0</a></div>
+          <div class="header-item-btn header-item-order"><a href="blank.html">Оформить заказ</a></div>
         </div>
       </section>
 
@@ -71,7 +70,9 @@
           <div class="card material card-left">
             <div class="card-name">
               <h3>Материалы</h3>
-              <a href="blank.html">на любой вкус</a>
+              <div class="a-block">
+                <a href="blank.html">на любой вкус</a>
+              </div>
             </div>
             <div class="card-img">
               <img src="img/main/icon-material.svg">
@@ -80,7 +81,9 @@
           <div class="card tool card-left">
             <div class="card-name">
               <h3>Инструмент</h3>
-              <a href="blank.html">на все случаи</a>
+              <div class="a-block">
+                <a href="blank.html">на все случаи</a>
+              </div>
             </div>
             <div class="card-img">
               <img src="img/main/icon-instrument.svg">
@@ -89,7 +92,9 @@
           <div class="card technic card-right">
             <div class="card-name">
               <h3>Техника</h3>
-              <a href="blank.html">для стройки</a>
+              <div class="a-block">
+                <a href="blank.html">для стройки</a>
+              </div>
             </div>
             <div class="card-img">
               <img src="img/main/icon-tech.svg">
@@ -97,8 +102,7 @@
           </div>
         </div>
         <div class="down-list">
-          <div class="left-side">
-            <div class="card-big hammerDrill">
+          <div class="card-big hammerDrill">
                 <img src="img/main/slider-perforator.jpg">
               <div class="texts">
                 <div class="card-top">
@@ -118,21 +122,33 @@
                 </div>
               </div>
           </div>
-          <!--<div class="card-big Drill card-left">
-            <div class="card-top">
-              <h3>Дрели</h3><p>Соседям на радость!</p>
-            </div>
-            <div class="card-bottom">
-              <a href="blank.html">открыть каталог</a>
-              <img src="img/main/slider-drill.jpg">
-            </div>
-          </div>-->
+          <div class="card-big Drill-hidden">
+                <img src="img/main/slider-drill.jpg">
+              <div class="texts">
+                <div class="card-top">
+                  <h3>Дрели</h3>
+                  <p>Соседям на радость!</p>
+                </div>
+                <div class="card-middle">
+                  <button class="left-arrow">
+                    <img src="img/main/left.svg" width="22px" height="40px">
+                  </button>
+                  <button class="right-arrow">
+                    <img src="img/main/right.svg" width="22px" height="40px">
+                  </button>
+                </div>
+                <div class="card-bottom">
+                  <a href="blank.html">открыть каталог</a>
+                </div>
+              </div>
           </div>
           <div class="right-side">
             <div class="card sales card-right">
               <div class="card-name">
                 <h3>Скидки 50%</h3>
-                <a href="blank.html">на 350 товаров</a>
+                <div class="a-block">
+                  <a href="blank.html">на 350 товаров</a>
+                </div>
               </div>
               <div class="card-img">
                 <img src="img/main/icon-saleCart.svg">
@@ -141,7 +157,9 @@
             <div class="card delivery card-right">
               <div class="card-name">
                 <h3>Доставка</h3>
-                <a href="blank.html">бесплатно</a>
+                <div class="a-block">
+                  <a href="blank.html">бесплатно</a>
+                </div>
               </div>
               <div class="card-img">
                 <img src="img/main/icon-deliveryAuto.svg">
@@ -151,7 +169,7 @@
         </div>
       </section>
 
-      <section class="catalog"> <!--плитка с популярными товарами-->
+      <section class="catalog-popular"> <!--плитка с популярными товарами-->
         <section class="banner">
           <div class="left-position">
             <h2>Популярные товары:</h2>
@@ -161,15 +179,17 @@
           </div>
         </section>
           <div class="popular-item-list">
-            <div class="popular-item">
-              <a href="catalog.html">
+            <div class="popular-item" onmouseenter="mouseOncard(this,event)" onmouseleave="mouseOutcard(this,event)">
+              <div class="menu-item-hidden">
+                <a class="catalog-buy" href=""><img class="cart-icon" src="img/main/icon-cart.svg" alt="Корзина">Купить</a>
+                <a class="favorite-add" href="">В Закладки</a>
+              </div>
                 <div class="image-item">
                   <img src="img/main/bfg9000.jpg" width="184" height="164" alt="Перфоратор">
                 </div>
                 <div class="name-item">
                   <h3>Перфоратор BOSCH BFG 9000</h3>
                 </div>
-              </a>
               <div class="last-price">
                 <p>32500 Р.</p>
               </div>
@@ -179,15 +199,20 @@
                 </a>
               </div>
             </div>
-            <div class="popular-item">
-              <a href="catalog.html">
+            <div class="popular-item" onmouseenter="mouseOncard(this,event)" onmouseleave="mouseOutcard(this,event)">
+              <div class="menu-item-hidden">
+                <a class="catalog-buy" href=""><img class="cart-icon" src="img/main/icon-cart.svg" alt="Корзина">Купить</a>
+                <a class="favorite-add" href="">В Закладки</a>
+              </div>
+              <div class="new-banner">
+                <img src="img/main/new-rectangle.png" width="70px" height="70px">
+              </div>
                 <div class="image-item">
-                  <img src="img/main/bfg3000.jpg" width="184" height="164" alt="Перфоратор">
+                  <img src="img/main/bfg3000.jpg" width="127" height="112" alt="Перфоратор">
                 </div>
                 <div class="name-item">
                   <h3>Перфоратор BOSCH BFG 3000</h3>
                 </div>
-              </a>
               <div class="last-price">
                 <p>22500 Р.</p>
               </div>
@@ -197,15 +222,17 @@
                 </a>
               </div>
             </div>
-            <div class="popular-item">
-              <a href="catalog.html">
+            <div class="popular-item" onmouseenter="mouseOncard(this,event)" onmouseleave="mouseOutcard(this,event)">
+              <div class="menu-item-hidden">
+                <a class="catalog-buy" href=""><img class="cart-icon" src="img/main/icon-cart.svg" alt="Корзина">Купить</a>
+                <a class="favorite-add" href="">В Закладки</a>
+              </div>
                 <div class="image-item">
-                  <img src="img/main/bfg6000.jpg" width="184" height="164" alt="Перфоратор">
+                  <img src="img/main/bfg6000.jpg" width="144" height="128" alt="Перфоратор">
                 </div>
                 <div class="name-item">
                   <h3>Перфоратор BOSCH BFG 6000</h3>
                 </div>
-              </a>
               <div class="last-price">
                 <p>30500 Р.</p>
               </div>
@@ -215,15 +242,20 @@
                 </a>
               </div>
             </div>
-            <div class="popular-item">
-              <a href="catalog.html">
+            <div class="popular-item" onmouseenter="mouseOncard(this,event)" onmouseleave="mouseOutcard(this,event)">
+              <div class="menu-item-hidden">
+                <a class="catalog-buy" href=""><img class="cart-icon" src="img/main/icon-cart.svg" alt="Корзина">Купить</a>
+                <a class="favorite-add" href="">В Закладки</a>
+              </div>
+              <div class="new-banner">
+                <img src="img/main/new-rectangle.png" width="70px" height="70px">
+              </div>
                 <div class="image-item">
-                  <img src="img/main/bfg2000.jpg" width="184" height="164" alt="Перфоратор">
+                  <img src="img/main/bfg2000.jpg" width="127" height="112" alt="Перфоратор">
                 </div>
                 <div class="name-item">
                   <h3>Перфоратор BOSCH BFG 2000</h3>
                 </div>
-              </a>
               <div class="last-price">
                 <p>22500 Р.</p>
               </div>
@@ -296,16 +328,18 @@
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
       </section>
       <section class="lists">
-        <div class="features-list">
-          <div class="feature features-delivery-active">
-            <p><a></a>Доставка</p>
+        <div class="features-list" onmousedown="serviceClick(this,servItem)" onmouseup="serviceClick(this,servItem)">
+          <div class="feature delivery-show" >
+            <p>Доставка</p>
           </div>
-          <div class="feature features-guarante">
+          <div class="feature guarante">
             <p>Гарантия</p>
           </div>
-          <div class="feature features-credit">
+          <div class="feature credit">
             <p>Кредит</p>
           </div>
+        </div>
+        <div class="shadow-block">
         </div>
         <div class="features-addition-list">
           <div class="features-delivery-show about-card">
@@ -351,7 +385,7 @@
             <p class="partners-item"><img src="img/main/line.svg" width="25px" height="2px">Деловые линии</p>
             <p class="partners-item"><img src="img/main/line.svg" width="25px" height="2px">Автотрейдинг</p>
             <p class="partners-item last"><img src="img/main/line.svg" width="25px" height="2px">ЖелДорЭкспедиция</p>
-            <div class="big-red-button">
+            <div class="left-btn">
               <a href="blank.html" >Подробнее о компании</a>
             </div>
           </div>
@@ -361,7 +395,7 @@
           <p class="contact-info">Вы можете забрать товар сами,<br>
           заехав в наш офис:</p>
           <img src="img/main/map.png" width="300" height="158" alt="">
-          <div class="big-red-button">
+          <div class="right-btn">
             <a href="blank.html">Заблудились? Напишите нам!</a>
           </div>
         </section>
@@ -447,7 +481,21 @@
       <!--Здесь будет карта-->
       <button type="button" class="modal-close">Закрыть</button>
     </section>
-
     <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>-->
+    <script type="text/javascript">
+    function mouseOncard(event){
+      event.querySelector('.menu-item-hidden').classList.replace('menu-item-hidden','menu-item');
+      event.querySelector('.image-item').classList.replace('image-item','image-item-hidden');
+    }
+
+    function mouseOutcard(event){
+      event.querySelector('.menu-item').classList.replace('menu-item','menu-item-hidden');
+      event.querySelector('.image-item-hidden').classList.replace('image-item-hidden','image-item');
+    }
+
+    function serviceClick(servItem){
+      console.log(serv);
+    }
+    </script>
   </body>
 </html>
