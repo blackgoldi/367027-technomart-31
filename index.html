@@ -68,6 +68,9 @@
       <section class="category"> <!--плитка с категориями -->
         <div class="up-list">
           <div class="card material card-left">
+            <div class="new-banner-material">
+              <img src="img/main/new-rectangle.png" width="70px" height="70px">
+            </div>
             <div class="card-name">
               <h3>Материалы</h3>
               <div class="a-block">
@@ -328,21 +331,21 @@
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
       </section>
       <section class="lists">
-        <div class="features-list" onmousedown="serviceClick(this,servItem)" onmouseup="serviceClick(this,servItem)">
-          <div class="feature delivery-show" >
+        <div class="features-list">
+          <div class="feature delivery-show" onclick='serviceClick("delivery")'>
             <p>Доставка</p>
           </div>
-          <div class="feature guarante">
+          <div class="feature guarante" onclick='serviceClick("guarante")'>
             <p>Гарантия</p>
           </div>
-          <div class="feature credit">
+          <div class="feature credit" onclick='serviceClick("credit")'>
             <p>Кредит</p>
           </div>
         </div>
         <div class="shadow-block">
         </div>
         <div class="features-addition-list">
-          <div class="features-delivery-show about-card">
+          <div class="features-delivery about-card">
             <div class="features-name">
               <h2>Доставка</h2>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,поднимая его на ваш этаж!</p>
@@ -493,8 +496,32 @@
       event.querySelector('.image-item-hidden').classList.replace('image-item-hidden','image-item');
     }
 
-    function serviceClick(servItem){
-      console.log(serv);
+    function serviceClick(s){
+      switch(s){
+        case 'delivery':
+          if(document.querySelector('.delivery').classList.contains('delivery')==true){
+            document.querySelector('.delivery').classList.replace('delivery','delivery-show');
+            document.querySelector('.guarante-show').classList.replace('guarante-show','guarante');
+            document.querySelector('.credit-show').classList.replace('credit-show','credit');
+          }
+          else{
+
+          }
+          break;
+        case 'guarante':
+        if(document.querySelector('.guarante').classList.contains('guarante')==true){
+            document.querySelector('.guarante').classList.replace('guarante','guarante-show');
+            document.querySelector('.delivery-show').classList.replace('delivery-show','delivery');
+            document.querySelector('.credit-show').classList.replace('credit-show','credit');
+          }
+          else{
+
+          }
+          break;
+        case 'credit':
+          document.querySelector('.credit').classList.replace('credit','credit-show');
+          break;
+      }
     }
     </script>
   </body>
