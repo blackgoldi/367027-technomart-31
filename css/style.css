@@ -17,8 +17,6 @@
 
 
 .body-page{
-  min-width: 940px;
-  margin: 0 auto;
   padding: 0;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
@@ -68,8 +66,8 @@ footer{
 }
 
 .size-block{
-  margin-left: 130px;
-  margin-right: 130px;
+  width: 940px;
+  margin: 0 auto;
 }
 
 .header-item-btn{
@@ -533,11 +531,10 @@ footer{
 .category{
   display: flex;
   flex-direction: column;
-  min-width: 940px;
+  width: 940px;
+  margin: 0 auto;
   height: 409px;
   margin-top: 59px;
-  margin-left: 130px;
-  margin-right: 130px;
   margin-bottom: 59px;
 }
 
@@ -825,6 +822,7 @@ footer{
   background: #1D2739;
 }
 
+
 .catalog{
   min-height: 700px;
 }
@@ -840,10 +838,9 @@ footer{
 }
 
 .catalog-popular{
-  min-width: 940px;
+  width: 940px;
+  margin: 0 auto;
   height: 427px;
-  margin-left: 130px;
-  margin-right: 130px;
   margin-bottom: 70px;
 }
 
@@ -1074,18 +1071,12 @@ footer{
 .filter-horizontal{
   display: flex;
   align-items: center;
+  justify-content: space-around;
   background: #F7F3EC;
   min-width: 700px;
   height: 38px;
-}
-
-.filter-horizontal{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #F7F3EC;
-  min-width: 700px;
-  height: 38px;
+  margin: 0;
+  padding: 0;
 
   font-family: PT Sans;
   font-style: normal;
@@ -1331,13 +1322,16 @@ footer{
   flex-direction: row;
   justify-content: space-between;
   color: #000000;
-  margin:70px 130px 70px 130px;
+  width: 940px;
+  margin: 0 auto;
+  margin-bottom:70px;
 }
 
 .about-partners{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 }
 
 .about-partners h2{
@@ -1564,10 +1558,9 @@ legend{
 }
 
 .catalog-developer{
-  min-width: 940px;
+  width: 940px;
+  margin: 0 auto;
   height: 419px;
-  margin-left: 130px;
-  margin-right: 130px;
   margin-bottom: 70px;
 }
 
@@ -1743,9 +1736,13 @@ legend{
 
 .features{
   height: 522px;
-  padding: 0 130px 0 130px;
   color: #000000;
   background-color: var(--basic-background);
+}
+
+.features-box{
+  width: 940px;
+  margin: 0 auto;
 }
 
 .feature:hover{
