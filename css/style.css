@@ -2058,8 +2058,8 @@ footer{
 }
 
 .second-footer{
+  display: flex;
   height: 107px;
-
   background-color: #293449;
 }
 
