@@ -84,7 +84,7 @@
             <li class="breadcrumb-item"><img src="img/catalog/icon-right-small.svg" width="8" height="12"></li>
             <li class="breadcrumb-item breadcrumb-item-link"><a href="blank.html">Инструменты</a></li>
             <li class="breadcrumb-item"><img src="img/catalog/icon-right-small.svg" width="8" height="12"></li>
-            <li class="breadcrumb-item breadcrumb-item-current"><a>Перфораторы</a></li>
+            <li class="breadcrumb-item breadcrumb-item-current"><a href="#">Перфораторы</a></li>
           </ul>
         </section>
 
@@ -160,8 +160,7 @@
             </section>
           </div>
           <div class="second-column">
-            <section class="filter-horizontal"> <!--меню сортировки-->
-              <ul class="filter-list">
+            <ul class="filter-horizontal"> <!--меню сортировки-->
                 <li class="filter-name">Сортировка:</li>
                   <ul class="filter-first-sort">
                     <li class="filter-price filter-on" onmousedown='toggleFilter(this,"mice")'><a href="">По цене</a></li>
@@ -172,8 +171,7 @@
                   <a href=""><li class="filter-up filter-on"></li></a>
                   <a href=""><li class="filter-down filter-off"></li></a>
                 </ul>
-              </ul>
-            </section>
+            </ul>
             <ul class="catalog-list">
               <div class="popular-item" onmouseenter="mouseOncard(this,event)" onmouseleave="mouseOutcard(this,event)">
                 <div class="menu-item-hidden">
@@ -460,7 +458,7 @@
       </div>
     </footer>
 
-    <section class="modal-succes modal-hidden"> <!-- Всплывающее окно "товар успешно добавлен"-->
+    <section class="modal-succes"> <!-- Всплывающее окно "товар успешно добавлен"-->
       <p>
         <img src="img/catalog/icon-mark.png" width="66" height="66" alt="Успех">
         Товар успешно добавлен в корзину!
@@ -471,35 +469,6 @@
       </ul>
       <button type="exit-button">Закрыть</button>
     </section>
-    <script type="text/javascript">
-      function mouseOncard(event){
-        event.querySelector('.menu-item-hidden').classList.replace('menu-item-hidden','menu-item');
-        event.querySelector('.image-item').classList.replace('image-item','image-item-hidden');
-      }
-
-      function mouseOutcard(event){
-        event.querySelector('.menu-item').classList.replace('menu-item','menu-item-hidden');
-        event.querySelector('.image-item-hidden').classList.replace('image-item-hidden','image-item');
-      }
-
-      function toggleFilter(mice){
-        if(mice.classList.contains('filter-price')==true){
-          document.querySelector('filter-price').classList.replace("filter-off","filter-on");
-          document.querySelector('filter-type').classList.replace("filter-on","filter-off");
-          document.querySelector('filter-function').classList.replace("filter-on","filter-off");
-        }
-        if(mice.classList.contains('filter-type')==true){
-          document.querySelector('filter-type').classList.replace("filter-off","filter-on");
-          document.querySelector('filter-price').classList.replace("filter-on","filter-off");
-          document.querySelector('filter-function').classList.replace("filter-on","filter-off");
-        }
-        if(mice.classList.contains('filter-function')==true){
-          document.querySelector('filter-function').classList.replace("filter-off","filter-on");
-          document.querySelector('filter-type').classList.replace("filter-on","filter-off");
-          document.querySelector('filter-price').classList.replace("filter-on","filter-off");
-        }
-      }
-
-      </script>
+    <script src="/js/card-hover.js"></script>
   </body>
 </html>
