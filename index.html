@@ -397,9 +397,9 @@
           <h2>Контакты</h2>
           <p class="contact-info">Вы можете забрать товар сами,<br>
           заехав в наш офис:</p>
-          <img src="img/main/map.png" width="300" height="158" alt="">
+          <img class="map-button" src="img/main/map.png" width="300" height="158" alt="">
           <div class="right-btn">
-            <a href="blank.html">Заблудились? Напишите нам!</a>
+            <a class="contact-button" href="blank.html">Заблудились? Напишите нам!</a>
           </div>
         </section>
       </section>
@@ -466,63 +466,38 @@
       </div>
     </footer>
 
-    <section class="modal-hidden modal-feedback-"> <!-- Всплывающее окно с отправкой письма-->
-        <form action="https://echo.htmlacademy.ru" method="POST" class="modal-feedback-form">
-            <label for="name-input">Ваше имя:</label>
-            <input id="name-input" type="text" placeholder="Имя Фамилия">
-
-            <label for="email-input">Ваше e-mail:</label>
-            <input id="email-input" type="email" placeholder="email@example.com"><br>
-
-            <label for="text-input">Текст письма:</label>
-            <input id="text-input" type="text" placeholder="В свободной форме">
+    <section class="modal modal-feedback"> <!-- Всплывающее окно с отправкой письма-->
+        <div class="red-block">
+        </div>
+      <form action="https://echo.htmlacademy.ru" method="POST" class="modal-feedback-form">
+           <div class="first-modal-line">
+             <div class="row">
+              <label for="name-input">Ваше имя:</label>
+              <input class ="input-name" id="name-input" name ="name" type="text" placeholder="Имя Фамилия">
+             </div>
+             <div class="row">
+              <label for="email-input">Ваше e-mail:</label>
+              <input class ="input-email" id="email-input" name="email" type="email" placeholder="email@example.com">
+             </div>
+           </div>
+            <label class="textarea-label" for="text-input">Текст письма:</label>
+            <textarea class="message" placeholder="В свободной форме"></textarea>
+            <div class="send-button">
+              <button class="button" type="submit">Отправить</button>
+            </div>
       </form>
-      <button type="button" class="modal-close">Закрыть</button>
+
+        <button type="button" class="modal-close"></button>
     </section>
 
-    <section class="modal-hidden modal-map">
-      <!--Здесь будет карта-->
-      <button type="button" class="modal-close">Закрыть</button>
+    <section class="modal modal-map">
+      <div class="red-block"></div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.818026615573!2d30.315192316098244!3d59.96834198188698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc4e8ce61%3A0xe703c377f3424272!2sStudio%20212!5e0!3m2!1sen!2sru!4v1626363728671!5m2!1sen!2sru" width="943" height="449" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <button type="button" class="modal-close map-close"></button>
     </section>
     <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>-->
-    <script type="text/javascript">
-    function mouseOncard(event){
-      event.querySelector('.menu-item-hidden').classList.replace('menu-item-hidden','menu-item');
-      event.querySelector('.image-item').classList.replace('image-item','image-item-hidden');
-    }
-
-    function mouseOutcard(event){
-      event.querySelector('.menu-item').classList.replace('menu-item','menu-item-hidden');
-      event.querySelector('.image-item-hidden').classList.replace('image-item-hidden','image-item');
-    }
-
-    function serviceClick(s){
-      switch(s){
-        case 'delivery':
-          if(document.querySelector('.delivery').classList.contains('delivery')==true){
-            document.querySelector('.delivery').classList.replace('delivery','delivery-show');
-            document.querySelector('.guarante-show').classList.replace('guarante-show','guarante');
-            document.querySelector('.credit-show').classList.replace('credit-show','credit');
-          }
-          else{
-
-          }
-          break;
-        case 'guarante':
-        if(document.querySelector('.guarante').classList.contains('guarante')==true){
-            document.querySelector('.guarante').classList.replace('guarante','guarante-show');
-            document.querySelector('.delivery-show').classList.replace('delivery-show','delivery');
-            document.querySelector('.credit-show').classList.replace('credit-show','credit');
-          }
-          else{
-
-          }
-          break;
-        case 'credit':
-          document.querySelector('.credit').classList.replace('credit','credit-show');
-          break;
-      }
-    }
-    </script>
+    <script src="/js/card-hover.js"></script>
+    <script src="/js/feedback.js"></script>
+    <script src="/js/map.js"></script>
   </body>
 </html>
