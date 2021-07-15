@@ -687,7 +687,10 @@ footer{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 572px;
   margin-top: 34px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .card-middle button{
@@ -696,9 +699,32 @@ footer{
   padding: 0;
 }
 
+.not-together{
+  height: 40px;
+}
+
 .left-arrow{
-  margin-left: 24px;
-  margin-right: 532px;
+  display: none;
+}
+
+.right-arrow{
+  display: none;
+}
+
+.arrow-show{
+  display: block;
+}
+
+.hammerDrill{
+  display: none;
+}
+
+.Drill{
+  display: none;
+}
+
+.card-show{
+  display: block;
 }
 
 .card-bottom a{
@@ -726,16 +752,31 @@ footer{
   background: #BA2732;
 }
 
-.hammerDrill-hidden{
-  display: none;
-}
-
-.Drill-hidden{
-  display: none;
-}
-
 .main-catalog{
   margin-top: 21px;
+}
+
+.slider-dots{
+  display: flex;
+  justify-content: center;
+  width: 620px;
+}
+
+.hammerDrill-dot{
+  width: 10px;
+  height: 10px;
+  background-image: url("/img/catalog/slider-dot.svg");
+  margin-right: 10px;
+}
+
+.Drill-dot{
+  width: 10px;
+  height: 10px;
+  background-image: url("/img/catalog/slider-dot.svg");
+}
+
+.active-dot{
+  background-image: url("/img/catalog/slider-dot-active.jpg");
 }
 
 .main-navigation{
@@ -1903,18 +1944,6 @@ legend{
   display: flex;
   color:#32425c;
   background: var(--white);
-}
-
-.features-delivery-hidden{
-  display: none;
-}
-
-.features-guarante-hidden{
-  display: none;
-}
-
-.features-credit-hidden{
-  display: none;
 }
 
 footer{

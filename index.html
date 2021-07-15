@@ -105,7 +105,7 @@
           </div>
         </div>
         <div class="down-list">
-          <div class="card-big hammerDrill">
+          <div class="card-big hammerDrill card-show">
                 <img src="img/main/slider-perforator.jpg">
               <div class="texts">
                 <div class="card-top">
@@ -113,19 +113,26 @@
                   <p>Настоящие мужские игрушки</p>
                 </div>
                 <div class="card-middle">
-                  <button class="left-arrow">
+                  <button type="button" class="left-arrow">
                     <img src="img/main/left.svg" width="22px" height="40px">
                   </button>
-                  <button class="right-arrow">
+                  <div class="not-together">
+
+                  </div>
+                  <button type="button" class="right-arrow arrow-show">
                     <img src="img/main/right.svg" width="22px" height="40px">
                   </button>
                 </div>
                 <div class="card-bottom">
                   <a href="blank.html">открыть каталог</a>
                 </div>
+                <div class="slider-dots">
+                  <img class="hammerDrill-dot active-dot">
+                  <img class="Drill-dot">
+                </div>
               </div>
           </div>
-          <div class="card-big Drill-hidden">
+          <div class="card-big Drill">
                 <img src="img/main/slider-drill.jpg">
               <div class="texts">
                 <div class="card-top">
@@ -133,15 +140,22 @@
                   <p>Соседям на радость!</p>
                 </div>
                 <div class="card-middle">
-                  <button class="left-arrow">
+                  <button type="button" class="left-arrow arrow-show">
                     <img src="img/main/left.svg" width="22px" height="40px">
                   </button>
-                  <button class="right-arrow">
+                  <div class="not-together">
+
+                  </div>
+                  <button type="button" class="right-arrow">
                     <img src="img/main/right.svg" width="22px" height="40px">
                   </button>
                 </div>
                 <div class="card-bottom">
                   <a href="blank.html">открыть каталог</a>
+                </div>
+                <div class="slider-dots">
+                  <img class="hammerDrill-dot">
+                  <img class="Drill-dot active-dot">
                 </div>
               </div>
           </div>
@@ -354,7 +368,7 @@
               <img src="img/main/delivery.png" width="468" height="261" alt="Грузовик">
             </div>
           </div>
-          <div class="features-guarante-hidden about-card">
+          <div class="features-guarante about-card">
             <div class="features-name">
               <h2>Гарантия</h2>
               <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
@@ -363,7 +377,7 @@
               <img src="img/main/guarante.png" width="389" height="283" alt="Медаль за гарантию">
             </div>
           </div>
-          <div class="features-credit-hidden about-card">
+          <div class="features-credit about-card">
             <div class="features-name">
               <h2>Кредит</h2>
               <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
@@ -499,5 +513,6 @@
     <script src="/js/card-hover.js"></script>
     <script src="/js/feedback.js"></script>
     <script src="/js/map.js"></script>
+    <script src="/js/slider.js"></script>
   </body>
 </html>
