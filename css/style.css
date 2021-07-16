@@ -1175,10 +1175,6 @@ footer{
   margin-bottom: 9px;
 }
 
-.range-block label{
-  display: none;
-}
-
 .range-input{
   -webkit-appearance: none;
   height: 2px;
@@ -1379,10 +1375,6 @@ legend{
   justify-content: space-between;
   margin: 0 0 25px;
   padding: 0;
-}
-
-.price-input label{
-  display: none;
 }
 
 .price-input input{
