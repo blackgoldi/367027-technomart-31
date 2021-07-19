@@ -1,8 +1,8 @@
-const hammerDrill = document.querySelector(".hammerDrill");
+const hammerDrill = document.querySelector(".hammerdrill");
 const lefthammerDrill = hammerDrill.querySelector(".left-arrow");
 const righthammerDrill = hammerDrill.querySelector(".right-arrow");
 
-const Drill = document.querySelector(".Drill");
+const Drill = document.querySelector(".drill");
 const leftDrill = Drill.querySelector(".left-arrow");
 const rightDrill = Drill.querySelector(".right-arrow");
 
