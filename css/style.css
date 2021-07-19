@@ -1,18 +1,18 @@
 :root{
-  --basic-red:#ee3643;
-  --basic-green:#63a63e;
-  --basic-grey:#293449;
-  --basic-greylight:#c5c5c5;
-  --basic-background:#f1f5f7;
-  --white:#ffffff;
-  --special-yellow:#ffbf47;
-  --special-blue:#3bbce3;
-  --special-liliac:#dc91d8;
-  --special-greenlight:#8ed78f;
-  --special-yellowlight:#ffd180;
-  --success:#5fbb2d;
-  --warning:#ffbf47;
-  --error:#ba2732;
+  --basic-red:#EE3643;
+  --basic-green:#63A63E;
+  --basic-grey:#3D546F;
+  --basic-greylight:#C5C5C5;
+  --basic-background:#F1F5F7;
+  --white:#FFFFFF;
+  --special-yellow:#FFBF47;
+  --special-blue:#3BBCE3;
+  --special-liliac:#DC91D8;
+  --special-greenlight:#8ED78F;
+  --special-yellowlight:#FFD180;
+  --success:#5FBB2D;
+  --warning:#FFBF47;
+  --error:#BA2732;
 }
 
 .body-page{
@@ -54,8 +54,9 @@ footer{
 }
 
 .header-box{
+  height: 42px;
   width: 940px;
-  margin: 0 auto;
+  margin:0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,7 +67,6 @@ footer{
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 42px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -136,6 +136,8 @@ footer{
 }
 
 .header-item-logo{
+  width: 220px;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,8 +147,6 @@ footer{
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 220px;
-  height: 47px;
   background: #EE3643;
   -webkit-box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
           box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
@@ -391,7 +391,7 @@ footer{
           box-sizing: border-box;
   width: 940px;
   height: 71px;
-  margin: 38px auto 40px auto;
+  margin: 45px auto 40px auto;
 }
 
 .main-header-text{
@@ -447,6 +447,16 @@ footer{
   line-height: 30px;
   text-transform: uppercase;
   margin-bottom: 24px;
+}
+
+.contact h2{
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-top: 0px;
 }
 
 .contact-info{
@@ -848,7 +858,7 @@ footer{
   background-color: var(--special-greenlight);
 }
 
-.delivery{
+.delivery-card{
   justify-self: right;
   background-color: var(--special-yellowlight);
 }
@@ -1740,6 +1750,7 @@ footer{
   color: #000000;
   width: 940px;
   margin: 0 auto;
+  margin-top: 70px;
   margin-bottom:70px;
 }
 
@@ -1762,6 +1773,7 @@ footer{
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  margin-top: 0px;
   margin-bottom: 25px;
 }
 
